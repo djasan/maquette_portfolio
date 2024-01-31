@@ -12,13 +12,20 @@
 
   <!-- Navigation -->
   <nav>
-    <a id="home-link" href="#">HOME</a>
-    <div id="menu-burger">&#9776;</div>
-    <ul id="menu-items">
-      <li><a href="#">Menu 1</a></li>
-      <li><a href="#">Menu 2</a></li>
-      <li><a href="#">Menu 3</a></li>
-    </ul>
+    <div id="menu-burger">&#9776;
+      <div id="navbar">
+       <ul><li><a href="#home">HOME</a></li>
+       <li><a href="#about">ABOUT</a></li>
+       <li><a href="#portfolio">PORTFOLIO</a></li>
+       <li><a href="#contact">CONTACT</a></li>
+      </ul> 
+        
+        
+        
+        
+      </div>
+
+    </div>
   </nav>
 
   <!-- Header -->
@@ -50,64 +57,70 @@
   <!-- Section "Parcours" -->
   <section id="parcours">
     <h2>Im really good at:</h2>
+    <div class="progress-icon"><img src="./assets/img/camera_11954999.png" alt="camera"><h3>Photography</h3>
+     
 
-
-
-    <div class="progress-bar">
-      <div class="progress-icon">
-        <!-- Icône et titre pour la première barre de progression -->
+      <div class="progress-bar">
       </div>
-      <div class="progress-title">Photography</div>
-      <div class="progress-value">90%</div>
+
+      <div class="progress-value1">90%</div>
     </div>
 
-    <div class="progress-bar">
-      <div class="progress-icon">
-        <!-- Icône et titre pour la deuxième barre de progression -->
-      </div>
-      <div class="progress-title">Web Design</div>
-      <div class="progress-value">85%</div>
+    <div class="progress-icon"><img src="./assets/img/laptop-with-mouse-cursor_1486.png" alt="laptop-with-mouse-cursor"><h3>Web Design</h3>
+      <!-- Icône et titre pour la deuxième barre de progression -->
     </div>
+  
 
     <div class="progress-bar">
-      <div class="progress-icon">
-        <!-- Icône et titre pour la troisième barre de progression -->
-      </div>
-      <div class="progress-title">Photoshop</div>
-      <div class="progress-value">75%</div>
+      <div class="progress-value2">85%</div>
+    </div>
+
+
+    <div class="progress-icon"><img src="./assets/img/photo_44289.png" alt="photo"> <h3>Photoshop</h3> 
+      <!-- Icône et titre pour la troisième barre de progression -->
+    </div>
+  </div>
+    <div class="progress-bar">
+      <div class="progress-value3">75%</div>
     </div>
   </section>
 
-  <!-- Section avec 4 h2 et 4 h4 -->
+  <!-- Section avec 4 h2 et 4 h3 -->
   <section>
-    <div>
-      <h2>14+</h2>
-      <h3>Partners</h3>
-    </div>
-    <div>
-      <h2>55+</h2>
-      <h3>Projects Done</h3>
-    </div>
-    <div>
-      <h2>89+</h2>
-      <h3>Happy Clients</h3>
-    </div>
-    <div>
-      <h2>150+</h2>
-      <h3>Meetings</h3>
+    <div class="chiffre">
+      <div>
+        <h2>14+</h2>
+        <h3>Partners</h3>
+      </div>
+      <div>
+        <h2>55+</h2>
+        <h3>Projects Done</h3>
+      </div>
+      <div>
+        <h2>89+</h2>
+        <h3>Happy Clients</h3>
+      </div>
+      <div>
+        <h2>150+</h2>
+        <h3>Meetings</h3>
+      </div>
     </div>
   </section>
 
   <!-- Section "Portfolio" -->
-  <section id="portfolio">
-    <img src="./assets/img/parallax2.jpg" alt="Image Portfolio">
-    <h1>Portfolio</h1>
-    <div class="portfolio-item">
-      <h2>MY WORK</h2>
-      <p>Here are some of my latest lorem work ipsum tipsum.</p>
-      <p>Click on the images to make them bigger</p>
-    </div>
-    <div> <img src="./assets/img/p1.jpg" alt="Image P1">
+  <div class="parallax2"></div>
+
+  <!-- Ajoutez ici votre logo -->
+  <h1>Portfolio</h1>
+
+  <h2>MY WORK</h2>
+  <p>Here are some of my latest lorem work ipsum tipsum.</p>
+  <p>Click on the images to make them bigger</p>
+
+  <div class="portfolio-item">
+
+
+    <div><img src="./assets/img/p1.jpg" alt="Image P1">
       <h2>The mist over the mountains</h2>
     </div>
     <div> <img src="./assets/img/p2.jpg" alt="Image P2">
@@ -119,59 +132,81 @@
     <div> <img src="./assets/img/p4.jpg" alt="Image P4">
       <h2>Quiet ocean</h2>
     </div>
-    <div> <img src="./assets/img/p5.jpg" alt="Image P5">
+    <div><img src="./assets/img/p5.jpg" alt="Image P5">
       <h2>The mist</h2>
     </div>
     <div> <img src="./assets/img/p6.jpg" alt="Image P6">
       <h2>My beloved typewriter </h2>
     </div>
-    <div> <img src="./assets/img/p7.jpg" alt="Image P7">
+    <div>
+      <img src="./assets/img/p7.jpg" alt="Image P7">
       <h2>Empty ghost train</h2>
     </div>
-    <div> <img src="./assets/img/p8.jpg" alt="Image P8">
+    <div>
+      <img src="./assets/img/p8.jpg" alt="Image P8">
       <h2>Sailing</h2>
     </div>
-    <div class="load-more">
-      <button>LOAD MORE</button>
-    </div>
+  </div>
+
+  <button>LOAD MORE</button>
+
   </section>
   <section>
-    <div class="contact">
-      <img src="./assets/img/parallax3.jpg" alt="Image Contact">
-    
-      <h1>WHERE I WORK</h1>
-      <h2>I'd love your feedback!</h2>
-      <div>
-        <img src="./assets/img/map.png" alt="map">
-        <h2><img src="" alt="">Chicago, US</h2>
-        <h3><img src="" alt="">Phone: +00 151515</h3>
-        <h4><img src="" alt="">Email: mail@mail.com</h4>
-        <p>Swing by for a cup of <img src="./assets/img/tasse.png" alt="tasse">, or leave me a note:</p>
-      </div>
+    <div class="parallax3"></div>
+
+
+    <h1>WHERE I WORK</h1>
+    <h2>I'd love your feedback!</h2>
+    <div>
+      <img src="./assets/img/map.png" alt="map">
+    </div>
+    <div id="contact">
+      <h2><img src="./assets/img/maps-flags_447031.png" alt="maps-flag">Chicago, US</h2>
+      <h3><img src="./assets/img/phone-call_597177.png" alt="phone-call">Phone: +00 151515</h3>
+      <h4><img src="./assets/img/email_542689.png" alt="email">Email: mail@mail.com</h4>
+      <p>Swing by for a cup of <img src="./assets/img/tasse.png" alt="tasse">, or leave me a note:</p>
+    </div>
+
     </div>
   </section>
 
   <!-- Section "Formulaire" -->
-  <section id="formulaire">
-   
+  <section class="formulaire">
+
     <form>
-      <input type="text" placeholder="Name">
-      <input type="text" placeholder="Email">
-      <input type="email" placeholder="Message">
-      <input type="submit" value="SEND MESSAGE">
+     
+      <label for="name">Nom :</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-mail :</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit"><img src="./assets/img/paper-plane_3457341.png" alt="paper-plane">SEND MESSAGE</button>
+    </form>
     </form>
   </section>
-<section>
-  <!-- Footer -->
-  <footer>
-    <button>Accueil</button>
-    <div class="reseaux-sociaux">
-  
-    </div>
-    <button>To the top</button>
-    <h3>Powered by Sanson Djamila</h3>
-  </footer>
-</section>
+  <section>
+    <!-- Footer -->
+    <footer>
+      <button class="btn"><img src="./assets/img/fleche.svg" alt="fleche">To the top</button>
+      <div class="reseaux-sociaux">
+        <img src="./assets/img/4691567_facebook_icon.svg" alt="fb">
+        <img src="./assets/img/5335781_camera_instagram_social media_instagram logo_icon.svg" alt="instagram">
+        <img src="./assets/img/5282553_snap_snapchat_snapchat logo_icon.svg" alt="snapchat">
+        <img src="./assets/img/8198218_pinterest_social media_communication_interaction_social network_icon.svg"
+          alt="pinterest">
+        <img src="./assets/img/1820440_brand_logo_network_social_twitter_icon.svg" alt="twitter">
+        <img src="./assets/img/777926_linkedin_business_communication_connection_network_icon.svg" alt="linkedin">
+
+
+      </div>
+      <h2>Powered by Sanson Djamila</h2>
+
+    </footer>
+  </section>
 </body>
 
 </html>

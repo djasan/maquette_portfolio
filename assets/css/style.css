@@ -1,67 +1,377 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+
+
+
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  height:30px ;
+  display: block;
+  transition: top 0.3s;
+}
 
-  nav {
-    background-color: #333;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-    align-items: center;
-  }
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
-  #home-link {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-  }
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.portfolio-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -5px; /* Pour compenser la marge négative créée par les marges négatives sur les enfants */
+}
+.portfolio-item img {
+  width: calc(100% - 10px); /* Quatre images par ligne (25% pour compenser la marge) */
+  height: auto;
+  margin: 5px; /* Marge entre les images */
+  box-sizing: border-box; /* Inclure la marge dans la largeur/hauteur totale */
+}
+
+#about-me h2,h3{
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+}
+#about-me p,
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.progress-icon img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+
+  /* Ajoutez ici les styles pour l'icône si nécessaire */
+}
+
+
+
+
+
+/* Ajoutez ces classes pour définir la largeur en pourcentage */
+.progress-value1 {
+
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  text-align: right;
+  width: 90%;
+}
+
+.progress-value2 {
+
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  text-align: right;
+  width: 85%;
+}
+
+.progress-value3 {
+
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  text-align: right;
+  width: 75%;
+}
+
+.parcours {
+  background-color: #333333cd;
+  padding: 18px;
+}
+
+#parcours h2 {
+  font-weight: 300;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+
+
+}
+
+#parcours h3 {
+  font-weight: 300;
+  color: #5954549f;
+  font-size: 20px;
+  letter-spacing: 4px;
+  display: inline-block; 
+  vertical-align: middle;
+  font-family: "Lato", sans-serif;
+}
+
+.chiffre {
+  background-color:grey;
+  padding: 12px;
+}
+
+.chiffre h2
+ {
+  color: #fff;
+  font-size: larger;
+  font-weight: 200;
+  font-family: "Lato", sans-serif;
+
+
+}
+.chiffre 
+h3 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 200;
+  
+
+}
+
+#contact {
+  text-align: left;
+  text-align: center;
+}
+
+#contact img {
+  width: 16px;
+
+}
+
+.reseaux-sociaux img {
+  display: inline;
+  width: 30px;
+  margin: 0 10px;
+
+}
+
+.reseaux-sociaux h2 {
+  color: aliceblue;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  position: relative;
+  height: 500px;
+  /* Ajustez la hauteur selon vos besoins */
+  background-image: url('/assets/img/parallax1.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: #555;
+  z-index: 1;
+}
+
+#portfolio {
+  position: relative;
+  height: 500px;
+  /* Ajustez la hauteur selon vos besoins */
+  background-image: url('/assets/img/parallax2.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+#logo h1 {
+  /* Ajoutez ici vos styles pour le logo */
+  max-width: 200px;
+  background-color: #333333;
+  padding:20px  ;
+  font-size: 25px;
+  font-weight: lighter;
+  letter-spacing:10px ;
+  width: 200px; 
+  height:30px ;
+  font-family: "Lato", sans-serif;
+  /* Ajustez la largeur selon vos besoins */
+}
+
+.parallax2 {
+  position: relative;
+  height: 500px;
+  /* Ajustez la hauteur selon vos besoins */
+  background-image: url('/assets/img/parallax2.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax3 {
+  position: relative;
+  height: 500px;
+  /* Ajustez la hauteur selon vos besoins */
+  background-image: url('/assets/img/parallax3.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  color: #333;
+}
+button img{
+
+  width:16px ;
+}
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #191a19a8;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width:30% ;
+}
+
+button:hover {
+  background-color: #0f100fb9;
+}
+.btn{
+
+  margin: 15px;
+  background-color: rgba(201, 195, 195, 0.935);
+  color: #191a19;
+}
+.btn:hover{
+
+
+  background-color: aliceblue;
+}
+
+
+@media screen and (max-width: 576px) {
+
 
   #menu-burger {
+    display: block;
+  }
+
+  #navbar ul {
     display: none;
-    cursor: pointer;
-    font-size: 20px;
-  }
-
-  #menu-items {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  #menu-items li {
-    margin-right: 20px;
-  }
-  header {
-    position: relative;
-    height: 500px; /* Ajustez la hauteur selon vos besoins */
-    background-image: url('/assets/img/parallax1.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
   }
 
-  #logo {
-    /* Ajoutez ici vos styles pour le logo */
-    max-width: 200px; /* Ajustez la largeur selon vos besoins */
+
+
+  #navbar li {
+    margin: 0;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #555;
   }
-
-
-
-  @media screen and (max-width: 768px) {
-    #menu-items {
-      display: none;
-    }
-
-    #menu-burger {
-      display: block;
-    }
-  }
+}
